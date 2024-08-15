@@ -28,5 +28,15 @@ function displayNews(articles){
         articleDiv.appendChild(title);
 
         newsDiv.appendChild(articleDiv);
+
+        const authorDiv = document.createElement('div');
+
+        const author = document.createElement('h4');
+        author.textContent = article.author;
+
+        authorDiv.appendChild(author);
+
+        newsDiv.appendChild(authorDiv);
+
     }
 }
